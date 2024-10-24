@@ -31,7 +31,9 @@ All gerber files are in this repo.
       <th>Comment</th>
       <th>Footprint</th>
       <th>Value</th>
-      <th>Manufacturer Part</th>
+      <th>LCSC</th>
+      <th>Mouser</th>
+      <th>DigiKey</th>
     </tr>
   </thead>
   <tbody>
@@ -42,6 +44,8 @@ All gerber files are in this repo.
       <td>C0603</td>
       <td>22uF</td>
       <td>GRM188R60J226MEA0D</td>
+      <td>GRM188R60J226MEA0D</td>
+      <td>GRM188R60J226MEA0D</td>
     </tr>
     <tr>
       <td><img src="https://search.murata.co.jp/Ceramy/image/img/A01X/KGJ4.png" width="50" height="50"></td>
@@ -50,6 +54,8 @@ All gerber files are in this repo.
       <td>C0805</td>
       <td>47uF</td>
       <td>C2012X5R1A476MTJ00E</td>
+      <td>C2012X5R1A476M125AC</td>
+      <td>C2012X5R1A476M125AC</td>
     </tr>
     <tr>
       <td><img src="https://search.murata.co.jp/Ceramy/image/img/A01X/KGJ4.png" width="50" height="50"></td>
@@ -57,6 +63,8 @@ All gerber files are in this repo.
       <td>4.7nF</td>
       <td>C0603</td>
       <td>4.7nF</td>
+      <td>CC0603KRX7R9BB472</td>
+      <td>CC0603KRX7R9BB472</td>
       <td>CC0603KRX7R9BB472</td>
     </tr>
     <tr>
@@ -66,6 +74,8 @@ All gerber files are in this repo.
       <td>C0603</td>
       <td>120pF</td>
       <td>CL10C121JB8NNNC</td>
+      <td>CL10C121JB8NNNC</td>
+      <td>CL10C121JB8NNNC</td>
     </tr>
     <tr>
       <td><img src="https://viitorsemi.com/wp-content/uploads/SMB.png" width="50" height="50"></td>
@@ -74,6 +84,8 @@ All gerber files are in this repo.
       <td>SMB_L4.4-W3.6-LS5.3-RD</td>
       <td></td>
       <td>SS1045-SMB</td>
+      <td>VSSB7L45-M3/52T</td>
+      <td>VSSB7L45-M3/52T</td>
     </tr>
     <tr>
       <td><img src="https://cdn.prod.website-files.com/617637ae54d4542d0515cbec/627c9f53f619e9769fd2d1cd_ET-552.png" width="50" height="50"></td>
@@ -82,6 +94,8 @@ All gerber files are in this repo.
       <td>IND-SMD_L4.1-W4.1</td>
       <td>220nH</td>
       <td>IHLP1616BZERR22M01</td>
+      <td>IHLP1616BZERR22M01</td>
+      <td>IHLP1616BZERR22M01</td>
     </tr>
     <tr>
       <td><img src="https://www.signliteled.com/wp-content/uploads/2022/09/SMD2835.png" width="50" height="50"></td>
@@ -89,7 +103,9 @@ All gerber files are in this repo.
       <td>XL-2835IR-T202</td>
       <td>SMD2835</td>
       <td></td>
-      <td>XL-2835IR-T202</td>
+      <td>XL-2835IR-T202(recomended)</td>
+      <td>XXX</td>
+      <td>SE03-LP2835S-1400-940</td>
     </tr>
     <tr>
       <td><img src="https://th.bing.com/th/id/R.00c3ce59552065e12b63e6500cf87930?rik=Ha26dpNvrLQeig&pid=ImgRaw&r=0" width="50" height="50"></td>
@@ -98,6 +114,8 @@ All gerber files are in this repo.
       <td>LED0603</td>
       <td></td>
       <td>XL-1608SURC-06</td>
+      <td>SML-D12V8WT86</td>
+      <td>SML-D12V8WT86</td>
     </tr>
     <tr>
       <td><img src="https://embed.widencdn.net/img/rocelec/rvdhilglbk/640px/sot95p237x111-3l20_ons_n.step.png" width="50" height="50"></td>
@@ -105,6 +123,8 @@ All gerber files are in this repo.
       <td>AP3404</td>
       <td>SOT-23-3</td>
       <td></td>
+      <td>AP3404</td>
+      <td>AP3404</td>
       <td>AP3404</td>
     </tr>
     <tr>
@@ -114,6 +134,8 @@ All gerber files are in this repo.
       <td>R0603</td>
       <td>10Ω</td>
       <td>0603WAF100JT5E</td>
+      <td>0603WAF100JT5E</td>
+      <td>0603WAF100JT5E</td>
     </tr>
     <tr>
       <td><img src="https://www.ryndackcomponentes.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_2008.jpg" width="50" height="50"></td>
@@ -121,6 +143,8 @@ All gerber files are in this repo.
       <td>10k</td>
       <td>R0603</td>
       <td>10k</td>
+      <td>RC0603FR-0710KL</td>
+      <td>RC0603FR-0710KL</td>
       <td>RC0603FR-0710KL</td>
     </tr>
     <tr>
@@ -130,6 +154,8 @@ All gerber files are in this repo.
       <td>R0603</td>
       <td>316kΩ</td>
       <td>RC0603FR-07316KL</td>
+      <td>RC0603FR-07316KL</td>
+      <td>RC0603FR-07316KL</td>
     </tr>
     <tr>
       <td><img src="https://www.ryndackcomponentes.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/i/m/image_2008.jpg" width="50" height="50"></td>
@@ -137,6 +163,8 @@ All gerber files are in this repo.
       <td>100kΩ</td>
       <td>R0603</td>
       <td>100kΩ</td>
+      <td>RC0603FR-07100KL</td>
+      <td>RC0603FR-07100KL</td>
       <td>RC0603FR-07100KL</td>
     </tr>
     <tr>
@@ -146,6 +174,8 @@ All gerber files are in this repo.
       <td>R0603</td>
       <td>100Ω</td>
       <td>0603WAJ0101T5E</td>
+      <td>0603WAJ0101T5E</td>
+      <td>0603WAJ0101T5E</td>
     </tr>
     <tr>
       <td><img src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/deaa8e36fedfbb11be15356606ef9348/large.png" width="50" height="50"></td>
@@ -153,6 +183,8 @@ All gerber files are in this repo.
       <td>ATTINY202-SSNR</td>
       <td>SOIC-8</td>
       <td></td>
+      <td>ATTINY202-SSNR</td>
+      <td>ATTINY202-SSNR</td>
       <td>ATTINY202-SSNR</td>
     </tr>
     <tr>
@@ -162,6 +194,8 @@ All gerber files are in this repo.
       <td>SOT-563-6</td>
       <td></td>
       <td>TPS62A06DRLR</td>
+      <td>TPS62A06DRLR</td>
+      <td>TPS62A06DRLR</td>
     </tr>
     <tr>
       <td><img src="https://cdn-reichelt.de/bilder/web/xxl_ws/C400/PTC_FSMD014R.png" width="50" height="50"></td>
@@ -170,6 +204,8 @@ All gerber files are in this repo.
       <td>F1812</td>
       <td></td>
       <td>1812L400/12GR</td>
+      <td>MF-MSMF260-2</td>
+      <td>MF-MSMF260-2</td>
     </tr>
   </tbody>
 </table>
