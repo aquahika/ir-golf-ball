@@ -3,24 +3,24 @@
 ![ball image](./img/close.jpg?raw=true)
 
 # What / Why it is?
-A golf size ball emiting IR light powered by 18350 Li-Ion battery with 40khz modulation (8 pulzes of 40khz then off with period of 1.2khz)
+A golf size ball emiting IR light powered by 18350 Li-Ion battery with 40khz modulation 
+(8 pulzes of 40khz then off with period of 1.2khz)
+<img src="img/IR_ball_modulation.png">
 
 # How to get it?
+You will be able to buy it soon, for now we are taking preorders [here](https://docs.google.com/forms/d/e/1FAIpQLSeDNluafNvnX1WBIk5zJzcXsfOrKENFUOebmqeOT6po7Bbjzg/viewform?usp=sf_link) cost is 20$ per ball build without battery and 15$ for kit.
 
-## Buy it and suport us
-You will be able to buy it soon from many places, for now we are taking preorders [here](https://docs.google.com/forms/d/e/1FAIpQLSeDNluafNvnX1WBIk5zJzcXsfOrKENFUOebmqeOT6po7Bbjzg/viewform?usp=sf_link) cost is 20$ per ball build without battery
-
-## Make it your self
+# How to make it your self from scratch
 ## Step 1: Get all materials
-You will be able to order kit from us or you can source all neaded components by your self.
+
 ### 1. Flex PCB
 We recomend to order flexPCB from eather JLCPCB or PCBWAY, both do have sponsorship programs so you might be able to get it for free. Depending on your buget and skill set also think about ordering stencil (all componentc are posible to solder by hand soledring but it is easier to do it with stencil)
 
 https://www.pcbway.com/sponsor.html
 https://jlcpcb.com/help/article/how-to-apply-for-free-pcb
-<img src="img/pcb.png" width="500" height="250">
+<img src="img/pcb.jpg" width="500" height="250">
 
-All gerber files are in this repo.
+You can find all files neaded for manufacturing [here](https://github.com/robocup-junior/ir-golf-ball/tree/main/jlcpcb) in this repo.
 
 ### 2. Electrical components
 <table>
@@ -207,6 +207,16 @@ All gerber files are in this repo.
       <td>MF-MSMF260-2</td>
       <td>MF-MSMF260-2</td>
     </tr>
+    <tr>
+      <td><img src="https://cdn.soselectronic.com/productdata/70/0d/334727af/181.jpg" width="50" height="50"></td>
+      <td>1</td>
+      <td>181 Keystone Spring</td>
+      <td>F1812</td>
+      <td></td>
+      <td>181 Keystone Spring</td>
+      <td>181 Keystone Spring</td>
+      <td>181 Keystone Spring</td>
+    </tr>
   </tbody>
 </table>
 
@@ -214,46 +224,65 @@ We recomend ordering from LCSC but you can find all the componets on other sites
 
 ### 3. Mechanical components
 #### Filament
-Shells are 3D printed, after lot of testing we found out that best option in general is using [PCTG](https://shop.spectrumfilaments.com/product-eng-1414-Filament-Spectrum-Premium-PCTG-1-75mm-PURE-ORANGE-1kg-RAL-2004.html) for good optical properties/cheap/easy to print/mechanical properties similar to PC. But PC is also posible to use.
+Shells are 3D printed, after lot of testing we found out that best option in general is using [PCTG](https://shop.spectrumfilaments.com/product-eng-1414-Filament-Spectrum-Premium-PCTG-1-75mm-PURE-ORANGE-1kg-RAL-2004.html) for good optical properties/cheap/easy to print/mechanical properties similar to PC.
 
 #### Magnets
-For magnets we are using 6 [6mm*5mm](https://www.unimagnet.cz/neodymovy-magnet-kotouc-6-mm-v-5-mm-sila-1-2-kg_z323/) N42 neodimium magnets. 
+For magnets we are using 6 [8mm*5mm*5mm](https://www.unimagnet.cz/neodymovy-magnet-kvadr-8-5-5-mm-pozinkovany-sila-1-1-kg_z905/) neodimium magnets. 
 
-#### Brass 
-For ball balancing we are using 6mm brass rod cuted into 6*5mm peaceas. We chose brass rod because it is really easy to find and it is cheap it has high density and it is not toxick.
+#### 4mm balls
+For ball balancing we are using 4mm steel balls, you schold be able to find local distributor, we buy them [here](https://www.temu.com/cz-en/1000pcs-3-5mm-3mm-4-5mm-4mm-steel-ball--ball-bearing-g-601099529146981.html) 
 
 #### Glue
-Any superglue will work fine
+Any superglue should work fine but we recomend UHU MAX Repair
 
 ### 4. Battery
-We are using 18350 Li-Ion battery. We recomend capacity ranging from 1100mAh to 1200mAh (for balance reasons). It schold be easy to find in your local vape shop or battery store. Dont forget to get charger if you dont have one.
+We are using 18350 Li-Ion battery. We recomend capacity ranging from 1100mAh to 1200mAh (for balance reasons) with weigt as close to 24g as posible . It schold be easy to find in your local vape shop or battery store. Dont forget to get charger if you dont have one.
 
 ## Step 2: Print 3D shells
-You can find stl files as well as sliced model in prushaslicer in 3d in this repo. Main thing to look for is to use enought of separation distance for suports (0.35mm) and to set temperature of bad to 100 C and nozle to 250 C.
-Also print counterwight for balance and fill it with solder.
+![](https://github.com/robocup-junior/ir-golf-ball/blob/main/img/3d_printing.gif)
+
+You can find stl files as well as sliced model in prushaslicer in 3d in this repo. Main thing to look for is to use enought of separation distance for suports (0.25mm) and to set temperature of bad to 80 C and nozle to 255 C.
+Also dont forget to print counterwight for balance. All the files can be found [here](https://github.com/robocup-junior/ir-golf-ball/blob/main/3d/). Time to print 1 shell is around 1:30h. For counterweight it is around 30min
 
 ## Step 3: Asemble PCBs
 While your 3d printer is working you can asemble PCBs. It can be done by hand but stencil is more convinient. We recomend to place coil as last component so you will be able to rework regulator solder joints if neaded after reflow.
-![pcb_values](./img/pcb_values.png?raw=true)
 
 ## Step 4: Program AtTiny
 This step is not neaded when you did buy a kit from us. 
 The best way to aproach this is to watch this video: https://www.youtube.com/watch?v=AL9vK_xMt4E
-and upload code as mention in the video. Dont forget to contect 3.3V to 2.5V trace when programing so UDPI voltages do match.
+and upload code as mention in the video. Dont forget to contect 3.3V to 2.5V trace when programing so UDPI voltages do match. Also dont forgete to change freqvenci to 5MHz for attiny being able to work at 2.5V.
 
-Also you schold test your PCB by using baterry if all LEDs are on.
-TODO make video how to do it for our PCB
+## Step 5: Magnets and counterweights
+First remove suports from 3d printed shell.
 
-## Step 5: Cut brass rod
-Now you nead to cut that 6mm btass rod into 5mm pieces, you will nead 12 of them. 
+<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/removed_suports.jpg" width="350" height="350">
 
-## Step 6: Insert magnets and brass rods into shells
-Now you will nead to insert magnets and brass rods into 3D printed shells and glue it in using superglue. And wait till it will dry.
+Then place balls in midle of every balancing pocket
 
-## Step 7: Insert PCB
+<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/botom_balls.jpg" width="350" height="350">
+
+Put glue on magnet
+
+<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/glue.jpg" width="350" height="350">
+
+Insert magnet
+
+<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/magnet_in.jpg" width="350" height="350">
+
+And insert top balls and repeat
+
+<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/finished_half.jpg" width="350" height="350">
+
+Do it twice, and then atach counter weight to PCB
+
+<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/pcb_counterweight.jpg" width="350" height="350">
+
+## Step 6: Insert PCB
 Insert PCB into a 3D printed schells and make shure that baterry fits corectly. You can regulate contact of batery with PCB by adding or removing solder from battery contact pads that are on the PCB.
 
-## Step 8: Test
+<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/open_ball.jpg">
+
+## Step 7: Test
 Test your ball if it glows using your mobile phone.
 ![ball image](./img/glow.jpg?raw=true)
 The end (:
