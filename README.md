@@ -82,12 +82,12 @@ You can find all files neaded for manufacturing [here](https://github.com/robocu
     <tr>
       <td><img src="https://viitorsemi.com/wp-content/uploads/SMB.png" width="50" height="50"></td>
       <td>1</td>
-      <td>SS1045-SMB</td>
-      <td>SMB_L4.4-W3.6-LS5.3-RD</td>
+      <td>HX 0805-C2</td>
+      <td>0805</td>
       <td></td>
-      <td>SS1045-SMB</td>
-      <td>VSSB7L45-M3/52T</td>
-      <td>VSSB7L45-M3/52T</td>
+      <td>HX 0805-C2</td>
+      <td>XXX</td>
+      <td>XXX</td>
     </tr>
     <tr>
       <td><img src="https://cdn.prod.website-files.com/617637ae54d4542d0515cbec/627c9f53f619e9769fd2d1cd_ET-552.png" width="50" height="50"></td>
