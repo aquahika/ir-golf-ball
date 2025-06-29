@@ -8,7 +8,7 @@ A golf size ball emiting IR light powered by 18350 Li-Ion battery with 40khz mod
 <img src="img/IR_ball_modulation.png">
 
 # How to get it?
-You are able to buy it here https://robofuze.com/ cost is 20EUR per ball build without battery and 15EUR for kit.
+You are able to buy it here https://robofuze.com/ cost is 20EUR per ball build without battery or you can build it your self.
 
 # How to make it your self from scratch
 ## Step 1: Get all materials
@@ -222,18 +222,13 @@ You can find all files neaded for manufacturing [here](https://github.com/robocu
   </tbody>
 </table>
 
-We recomend ordering from LCSC but you can find all the componets on other sites as well (Mouser,Digikey...), only one problematick component is LEDs, there are some alternatives but IR emision might be slightli diferent. For finding best suplier for you, we recomend using https://octopart.com/ and checking out list of eqvivalent componts (TODO list of eqvivalent components and selection criterias)
+We recomend ordering from LCSC but you can find all the componets on other sites as well (Mouser,Digikey...), only one problematick component is LEDs, there are some alternatives but IR emision might be slightli diferent. For finding best suplier for you, we recomend using https://octopart.com/
 
 ### 3. Mechanical components
 #### Filament
 <img src="https://shop.spectrumfilaments.com/hpeciai/42bd03f9c2f503d1c42d67cf6a055733/eng_pl_Filament-Spectrum-Premium-PCTG-1-75mm-TRANSPARENT-ORANGE-1kg-1517_1.jpg" width="500" >
 
 Shells are 3D printed, after lot of testing we found out that best option in general is using [Spectrum Premium PCTG 1.75mm TRANSPARENT ORANGE 1kg](https://shop.spectrumfilaments.com/product-eng-1517-Filament-Spectrum-Premium-PCTG-1-75mm-TRANSPARENT-ORANGE-1kg.html) for good optical properties/cheap/easy to print/mechanical properties similar to PC.
-
-#### Magnets
-For magnets we are using 6 [8mm*5mm*5mm](https://www.unimagnet.cz/neodymovy-magnet-kvadr-8-5-5-mm-pozinkovany-sila-1-1-kg_z905/) neodimium magnets. 
-
-<img src="https://www.unimagnet.cz/data/tmp/3/0/18820_3.jpg" width="500" >
 
 #### 4mm balls
 <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/ab5b1607a2cb150b3fd99ac4f5e698e6.jpg" width="500" >
@@ -242,9 +237,9 @@ For ball balancing we are using 4mm steel balls, you schold be able to find loca
 #### Glue
 <img src="https://www.rcprofi.cz/files/rcprofi-cz/soubory/modulimages/800x800w/uhu-max-repair-8g-cire-pruzne-lepidlo.jpg" width="500" >
 
-Any superglue should work fine but we recomend UHU MAX Repair
+Any superglue should works fine.
 
-### 4. Battery
+#### Battery
 <img src="https://www.tantedampf.de/4201-thickbox_default/keeppower-imr18350-1200mah-10a-2er-pack-inkl-akkuaufbewahrung.jpg" width="500" >
 
 We are using 18350 Li-Ion battery. We recomend capacity ranging from 1100mAh to 1200mAh (for balance reasons) with weigt as close to 24g as posible . It schold be easy to find in your local vape shop or battery store. Dont forget to get charger if you dont have one.
@@ -263,37 +258,12 @@ This step is not neaded when you did buy a kit from us.
 The best way to aproach this is to watch this video: https://www.youtube.com/watch?v=AL9vK_xMt4E
 and upload code as mention in the video. Dont forget to contect 5V to 2.5V trace when programing so UDPI voltages do match. Also dont forgete to change freqvenci to 5MHz for attiny being able to work at 2.5V.
 
-## Step 5: Magnets and counterweights
-First remove suports from 3d printed shell.
+## Step 5: Assemble
+https://youtu.be/4j4qLmYggQA
 
-<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/removed_suports.jpg"  height="350">
-
-Then place balls in midle of every balancing pocket
-
-<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/botom_balls.jpg"  height="350">
-
-Put glue on magnet
-
-<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/glue.jpg" height="350">
-
-Insert magnet
-
-<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/magnet_in.jpg"  height="350">
-
-And insert top balls and repeat
-
-<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/finished_half.jpg"  height="350">
-
-Do it twice, and then atach counter weight to PCB
-
-<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/pcb_counterweight.jpg"  height="350">
-
-## Step 6: Insert PCB
-Insert PCB into a 3D printed schells and make shure that baterry fits corectly. You can regulate contact of batery with PCB by adding or removing solder from battery contact pads that are on the PCB.
-
-<img src="https://github.com/robocup-junior/ir-golf-ball/blob/main/img/open_ball.jpg">
-
-## Step 7: Test
+## Step 6: Test
 Test your ball if it glows using your mobile phone.
 ![ball image](./img/glow.jpg?raw=true)
-The end (:
+
+# How to use
+https://youtu.be/EDb1FPTUQ7I
