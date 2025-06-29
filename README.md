@@ -20,7 +20,7 @@ https://www.pcbway.com/sponsor.html
 
 https://jlcpcb.com/help/article/how-to-apply-for-free-pcb
 
-<img src="img/pcb.jpg" width="500" height="250">
+<img src="img/PCB.png" width="500" height="250">
 
 You can find all files neaded for manufacturing [here](https://github.com/robocup-junior/ir-golf-ball/tree/main/jlcpcb) in this repo.
 
