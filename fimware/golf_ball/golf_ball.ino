@@ -1,14 +1,15 @@
-long   adc = 0;
-int    loop_count = 0;
+long adc = 0;
+int loop_count = 0;
 
 // pins
-const uint8_t VIB_PIN    = 0;
-const uint8_t LED_PIN    = 2;
+const uint8_t VIB_PIN = 0;
+const uint8_t LED_PIN = 2;
 const uint8_t MOSFET_PIN = 3;
-const uint8_t ADC_PIN    = 4;
+const uint8_t ADC_PIN = 4;
 
 // state machine
-enum State { ACTIVE, SLEEP };
+enum State { ACTIVE,
+             SLEEP };
 State state = ACTIVE;
 
 // battery-shutdown flag
@@ -16,30 +17,30 @@ bool batterySleep = false;
 
 // timing
 unsigned long lastMovementMs = 0;
-unsigned long lastBlinkMs    = 0;  // for the 15 s heartbeat
+unsigned long lastBlinkMs = 0;  // for the 15 s heartbeat
 
 // vibration change detection
 int lastVibState = LOW;
 
 // wake-from-sleep counters
-int    wakeCount     = 0;
+int wakeCount = 0;
 unsigned long wakeStartMs = 0;
 
 void setup() {
   delay(100);
-  pinMode(VIB_PIN,    INPUT);
-  pinMode(LED_PIN,    OUTPUT);
+  pinMode(VIB_PIN, INPUT);
+  pinMode(LED_PIN, OUTPUT);
   pinMode(MOSFET_PIN, OUTPUT);
-  pinMode(ADC_PIN,    INPUT);
+  pinMode(ADC_PIN, INPUT);
 
-  digitalWriteFast(LED_PIN,    LOW);
+  digitalWriteFast(LED_PIN, LOW);
   digitalWriteFast(MOSFET_PIN, LOW);
 
-  lastVibState    = digitalRead(VIB_PIN);
-  lastMovementMs  = millis();      // assume movement at power-up
-  lastBlinkMs     = millis();      // start heartbeat timer now
+  lastVibState = digitalRead(VIB_PIN);
+  lastMovementMs = millis();  // assume movement at power-up
+  lastBlinkMs = millis();     // start heartbeat timer now
 
-  // —— Power-up blink 10× fast ——  
+  // —— Power-up blink 10× fast ——
   for (uint8_t i = 0; i < 10; i++) {
     digitalWriteFast(LED_PIN, HIGH);
     delay(100);
@@ -73,7 +74,7 @@ void loop() {
       }
 
       if (wakeCount >= 10) {
-        // —— Wake-up blink 10× fast ——  
+        // —— Wake-up blink 10× fast ——
         for (uint8_t j = 0; j < 10; j++) {
           digitalWriteFast(LED_PIN, HIGH);
           delay(100);
@@ -106,15 +107,13 @@ void loop() {
         digitalWriteFast(LED_PIN, LOW);
         delay(100);
       }
-    }
-    else if (batterySleep && adc >= 716) {
+    } else if (batterySleep && adc >= 716) {
       // battery recovered: clear shutdown
       batterySleep = false;
       state = ACTIVE;
       digitalWriteFast(LED_PIN, LOW);
       lastBlinkMs = now;  // restart heartbeat timer
-    }
-    else if (!batterySleep) {
+    } else if (!batterySleep) {
       // normal battery-warning indication (<716): LED ON constantly
       if (adc < 716) {
         digitalWriteFast(LED_PIN, HIGH);
@@ -147,20 +146,21 @@ void loop() {
       }
       digitalWriteFast(MOSFET_PIN, LOW);
       state = SLEEP;
-      wakeCount = 0;          // reset wake counter
-    }
-    else {
+      wakeCount = 0;  // reset wake counter
+    } else {
       // 3) While still ACTIVE (and not forced off by battery), do a single quick blink every 15 s
       //    Only blink if the LED is currently LOW (i.e. not in battery-warning ON state)
-      if ((now - lastBlinkMs >= 15000) && (digitalRead(LED_PIN) == LOW)) {
-        digitalWriteFast(LED_PIN, HIGH);
-        delay(100);
-        digitalWriteFast(LED_PIN, LOW);
-        lastBlinkMs = now;
+      //    We do not use delay(100) here to allow IR pulses to continue
+      if (now - lastBlinkMs >= 15000) {
+        if (digitalRead(LED_PIN) == LOW) {
+          digitalWriteFast(LED_PIN, HIGH);
+        } else if (now - lastBlinkMs >= 15100) {
+          digitalWriteFast(LED_PIN, LOW);
+          lastBlinkMs = now;
+        }
       }
     }
-  }
-  else {
+  } else {
     // SLEEP state: ensure MOSFET off
     digitalWriteFast(MOSFET_PIN, LOW);
   }
