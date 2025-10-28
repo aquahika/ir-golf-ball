@@ -8,8 +8,11 @@ A golf size ball emiting IR light powered by 18350 Li-Ion battery with 40khz mod
 <img src="img/IR_ball_modulation.png">
 
 # How to get it?
-You are able to buy it here https://robofuze.com/ cost is 20EUR per ball build without battery or you can build it your self.
+You are able to buy it here:
+robofuze.com 20 EUR Ships from Czech Republick
+rovotas.com 22.95 EUR Ships from Japan
 
+or just build it your self.
 # How to make it your self from scratch
 ## Step 1: Get all materials
 
